@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in `awk '{print $2}' stalist.txt`
+do
+python remove_noise_catalog.py $i
+done
